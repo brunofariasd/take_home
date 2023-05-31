@@ -1,5 +1,11 @@
 import { Dimensions } from 'react-native'
 
+export interface FilesData {
+  name: string
+  iconName: string
+  urlImageBackground: string
+}
+
 export interface IModalProps {
   active: boolean
 }
