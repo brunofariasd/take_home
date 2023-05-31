@@ -1,0 +1,16 @@
+/.git
+/.vscode
+/.circleci
+/android
+/ios
+node_modules
+yarn.lock
+coverage/
+.jest
+.buckconfig
+.editorconfig
+.flowconfig
+.gitattributes
+.gitignore
+*.json
+*.md
