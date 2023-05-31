@@ -1,0 +1,67 @@
+{
+  "common": {
+    "buttons": {
+      "back": "Back",
+      "back_accessibility_label": "Back",
+      "login_accessibility_label": "Login",
+      "share_accessibility_label": "Share",
+      "close_modal_accessibility_label": "Close Modal",
+      "back_to": "Back to {{page}}",
+      "enter": "Enter",
+      "save": "Save",
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "yes": "Yes",
+      "no": "No",
+      "clear": "Clear",
+      "confirm": "Confirm",
+      "send": "Send"
+    },
+    "menu_bottom": {
+      "home": "Home",
+      "trade": "Trade",
+      "portfolio": "Portfolio"
+    },
+    "text_actions":{
+      "create_directory_files_success": "The file download folder was created successfully",
+      "create_directory_files_error": "There was an error creating the files download folder",
+      "share_app_start": "Preparing App to share...",
+      "share_app_message": "Try this amazing app that helps you to download images, videos and many more from Twitter!",
+      "share_app_success": "The App was successfully shared!",
+      "no_connection_message": "It looks like your device is not connected to the internet, please check your connection and try again. 😓",
+      "download_file_success": "The file was successfully downloaded!",
+      "download_file_error_message": "The link provided is invalid or does not have any media files linked to the tweet, please provide a valid link.",
+      "delete_file_start": "Deleting file...",
+      "delete_file_success": "The file was successfully deleted.",
+      "delete_file_error": "There was an error trying to delete the file, please try again."
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Login",
+      "email_button_placeholder": "Email",
+      "password_button_placeholder": "Password",
+      "how_to_use_button": "How to use? Click here"
+    },
+    "trade": {
+    },
+    "portfolio": {
+      "premium_actived": "You already have Premium access, enjoy! 🎉",
+      "redeem_premium": "Login and try again",
+      "login_error": "Something went wrong on login. Please, try again. 😓",
+      "login_success": "Login successful. 🎉",
+      "logout_success": "Logout successful. 🎉",
+      "settings_menu_text_1": "Rate us",
+      "settings_menu_text_2": "Share application",
+      "settings_menu_text_3": "Privacy Policy",
+      "settings_menu_text_4": "Know our other apps",
+      "settings_menu_text_5": "Congratulations! You are Premium! 🎉",
+      "settings_menu_text_6": "Remove Ads? 🤔",
+      "settings_menu_text_7": "Logout",
+      "settings_menu_text_8": "Login and be a Premium member!"
+    },
+    "loading": {
+      "title": "Please wait, getting informations"
+    }
+  }
+}

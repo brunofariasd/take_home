@@ -5,6 +5,13 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,
+    "types": [
+      "jest",
+      "cypress",
+      "@testing-library/cypress",
+      "@types/styled-components-react-native"
+    ]
   }
 }

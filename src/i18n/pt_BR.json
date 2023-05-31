@@ -1,0 +1,67 @@
+{
+  "common": {
+    "buttons": {
+      "back": "Voltar",
+      "back_accessibility_label": "Voltar",
+      "download_accessibility_label": "Download",
+      "share_accessibility_label": "Compartilhar",
+      "close_modal_accessibility_label": "Fechar Modal",
+      "back_to": "Voltar para {{page}}",
+      "enter": "Entrar",
+      "save": "Salvar",
+      "ok": "Ok",
+      "cancel": "Cancelar",
+      "yes": "Sim",
+      "no": "Não",
+      "clear": "Limpar",
+      "confirm": "Confirmar",
+      "send": "Enviar"
+    },
+    "menu_bottom": {
+      "home": "Inicio",
+      "saved": "Salvos",
+      "extras": "Extras"
+    },
+    "text_actions":{
+      "create_directory_files_success": "A pasta para download dos arquivos foi criada com sucesso",
+      "create_directory_files_error": "Ocorreu um erro ao criar a pasta para download dos arquivos",
+      "share_app_start": "Preparando para compartilhar...",
+      "share_app_message": "Experimente este incrível aplicativo que ajuda você a baixar imagens, vídeos e muitos mais do Twitter !",
+      "share_app_success": "O aplicativo foi compartilhado com sucesso!",
+      "no_connection_message": "Parece que o seu dispositivo não está conectado a internet, favor verificar sua conexão e tentar novamente. 😓",
+      "download_file_success": "O arquivo foi baixado com sucesso!",
+      "download_file_error_message": "O link informado é invalido ou não possui nenhum arquivo de mídia vinculado ao tweet, favor informar um link válido.",
+      "delete_file_start": "Deletando arquivo...",
+      "delete_file_success": "O arquivo foi deletado com sucesso.",
+      "delete_file_error": "Ocorreu um erro ao tentar deletar o arquivo, tente novamente."
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Login",
+      "email_button_placeholder": "Email",
+      "password_button_placeholder": "Password",
+      "how_to_use_button": "Como Usar? Click ME"
+    },
+    "portfolio": {
+    },
+    "settings": {
+      "premium_actived": "Você já possui acesso Premium, aproveite. 🎉",
+      "redeem_premium": "Realize o seu login e tente novamente",
+      "login_error": "Algo deu errado ao tentar realizar o login. Por favor, tente novamente. 😓",
+      "login_success": "Login realizado com sucesso. 🎉",
+      "logout_success": "Usuario deslogado com sucesso. 🎉",
+      "settings_menu_text_1": "Avaliar esta aplicação",
+      "settings_menu_text_2": "Compartilhar Aplicativo",
+      "settings_menu_text_3": "Política de Privacidade",
+      "settings_menu_text_4": "Conheça nossos outros aplicativos",
+      "settings_menu_text_5": "Você possui Acesso Premium. 🎉",
+      "settings_menu_text_6": "Remover Propagandas ? 🤔",
+      "settings_menu_text_7": "Deslogar conta",
+      "settings_menu_text_8": "Realize seu login, e resgate seu Premium !"
+    },
+    "loading": {
+      "title": "Aguarde, Obtendo informações"
+    }
+  }
+}
