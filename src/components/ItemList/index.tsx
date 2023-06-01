@@ -5,20 +5,20 @@ import { useTheme } from 'styled-components/native'
 import Text from '../Text'
 
 interface Props {
-  iconName: string
+  iconName?: string
+  titleHeader?: string
+  height?: number
+  width?: number
   value: string
-  badgeValue?: Number
-  sideContent?: React.ReactNode
-  info?: string
 }
 
-const CardButton: React.FC<Props> = ({ value, info, iconName, badgeValue }): JSX.Element => {
+const CardButton: React.FC<Props> = ({ value, titleHeader, width, height, iconName }): JSX.Element => {
   const [isPressing, handlePress] = useState(false)
 
   const { colors } = useTheme()
 
   const getColor = (): string => {
-    if (isPressing) return colors.white
+    if (isPressing) return colors.primary
     return colors.gray[2]
   }
 
@@ -28,11 +28,18 @@ const CardButton: React.FC<Props> = ({ value, info, iconName, badgeValue }): JSX
       accessibilityRole="button"
       onPressIn={(): void => handlePress(true)}
       onPressOut={(): void => handlePress(false)}>
-      <Card testID="card" isPressing={isPressing}>
-        <Header>
-          <Icon name={iconName} size={24} color={getColor()} testID="card-button-icon" />
-        </Header>
-        <Text numberOfLines={1} ellipsizeMode="tail" variant="body-l">
+      <Card testID="card" isPressing={isPressing} width={width} height={height}>
+        {(iconName || titleHeader) && (
+          <Header>
+            {iconName && <Icon name={iconName} size={24} color={getColor()} testID="card-button-icon" />}
+            {titleHeader && (
+              <Text numberOfLines={1} ellipsizeMode="tail" variant="body-l">
+                {value}
+              </Text>
+            )}
+          </Header>
+        )}
+        <Text textAlign="left" ellipsizeMode="tail" variant="body-l">
           {value}
         </Text>
       </Card>

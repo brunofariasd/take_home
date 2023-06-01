@@ -36,7 +36,7 @@ export const lightTheme: DefaultTheme = {
   primaryColor: '#000',
   secundaryColor: '#292929',
   colors: {
-    primary: '#C13584',
+    primary: '#770FDF',
     secondary: ['#733dbf', '#52b6b0', '#532f80', '#e95582', '#ffbc66'],
     gray: ['#333', '#666', '#999', '#c2c2c2', '#ddd', '#eee', '#f9f9f9'],
     semantic: {

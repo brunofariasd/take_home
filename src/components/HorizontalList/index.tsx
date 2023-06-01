@@ -11,7 +11,7 @@ interface ListProps {
   renderItem: ({ item, index }) => React.ReactNode
 }
 
-const FundsList: React.FC<ListProps> = ({ data, renderItem }) => {
+const HorizontalList: React.FC<ListProps> = ({ data, renderItem }) => {
   const dispatch = useAppDispatch()
   const { spacing } = useTheme()
 
@@ -27,8 +27,7 @@ const FundsList: React.FC<ListProps> = ({ data, renderItem }) => {
         horizontal
         data={data}
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item): string => item.name.toString()}
-        contentContainerStyle={{ paddingHorizontal: getPadding() }}
+        keyExtractor={(item): string => item.value.toString()}
         ItemSeparatorComponent={(): React.ReactElement => <ItemSeparator />}
         renderItem={({ item, index }): React.ReactElement => <Item>{renderItem({ item, index })}</Item>}
       />
@@ -36,4 +35,4 @@ const FundsList: React.FC<ListProps> = ({ data, renderItem }) => {
   )
 }
 
-export default FundsList
+export default HorizontalList

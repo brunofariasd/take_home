@@ -6,13 +6,13 @@ import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/
 import { ThemeProvider } from 'styled-components/native'
 import { BottomTabBarProps, createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { useTranslation } from 'react-i18next'
-import { HomePage } from '../pages/HomePage'
+import { Home } from '../pages/Home'
 
 import { useAppSelector } from '../core/hooks/useAppStore'
 import { lightTheme, darkTheme } from '../styles'
 
 import TabNavigation from '../navigation'
-import SettingsPage from '../pages/SettingsPage'
+import Settings from '../pages/Settings'
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -50,19 +50,19 @@ const AppRoute: React.FC = () => {
         tabBar={tabBarBottom}>
         <Tab.Screen
           name={t('common:menu_bottom.home')}
-          component={HomePage}
+          component={Home}
           initialParams={{ icon: 'home' }}
           options={{ unmountOnBlur: true }}
         />
         <Tab.Screen
           name={t('common:menu_bottom.trade')}
-          component={HomePage}
+          component={Home}
           initialParams={{ icon: 'trending-up' }}
           options={{ unmountOnBlur: true }}
         />
         <Tab.Screen
           name={t('common:menu_bottom.portfolio')}
-          component={SettingsPage}
+          component={Settings}
           initialParams={{ icon: 'pie-chart' }}
           options={{ unmountOnBlur: true }}
         />
@@ -85,8 +85,8 @@ const AppRoute: React.FC = () => {
               headerShown: false,
               cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
             }}
-            initialRouteName="HomePage">
-            <Stack.Screen name="HomePage" component={routesTab} />
+            initialRouteName="Home">
+            <Stack.Screen name="Home" component={routesTab} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

@@ -16,9 +16,11 @@ export const Card = styled(View)`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 124px;
+  height: ${(props): number => props.height || props.theme.spacing[8] * 2}px;
+  width: ${(props): number => props.width || props.theme.spacing[8] * 3}px;
   padding: ${(props): number => props.theme.spacing[3]}px;
   border-radius: ${(props): number => props.theme.spacing[1]}px;
-  border-color: 'transparent';
-  background-color: ${(props): number => (props.isPressing ? props.theme.colors.primary : '#fff')};
+  border-color: ${(props): string => props.theme.colors.gray[4]};
+  border-width: ${(props): number => props.theme.spacing[1] / 3}px;
+  background-color: ${(props): number => (props.isPressing ? props.theme.colors.gray[4] : '#fff')};
 `
